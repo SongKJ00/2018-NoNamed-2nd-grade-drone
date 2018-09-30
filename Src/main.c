@@ -105,6 +105,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_DMA(&huart1, sbus_dma_buff, SBUS_DMA_LEN);
   HAL_UART_Receive_DMA(&huart2, mti_dma_buff, MTI_DMA_LEN);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
   HAL_TIM_Base_Start_IT(&htim6);
   /* USER CODE END 2 */
 
@@ -182,9 +186,18 @@ void SystemClock_Config(void)
 {
  if(htim -> Instance == TIM6)
  {
-   
+   /* New Code Begin */
+   read_sbus_packet();
+   /* New Code End */
    //read_sbus_packet();
    read_mti3_packet();
+   /* New Code Begin */
+   
+   if(mti_decode_flag)
+   {
+     controller();
+   }
+   /* New Code Begin */
    //controller();
  }
 }

@@ -5,16 +5,25 @@ uint8_t mti_dma_buff[MTI_DMA_LEN];
 
 int mti_cnt = 0;
 int mti_flag = 0;
+/* New Code Begin */
+uint8_t mti_decode_flag = 0;
+/* New Code End */
 
 MTI_UNION mti_union;
 MTI3 mti3;
 
 void read_mti3_packet()
 {
+  /* New Code Begin */
+  mti_decode_flag = 0;
+  /* New Code End */
   get_packet();
   if(mti_flag)
   {
     mti3_decode();
+    /* New Code Begin */
+    mti_decode_flag = 1;
+    /* New Code End */
     mti_flag = 0;
   }
 }
@@ -89,19 +98,29 @@ void mti3_decode()
     mti_union.byte[1] = mti_packet[24];
     mti_union.byte[2] = mti_packet[23];
     mti_union.byte[3] = mti_packet[22];
-    mti3.pqr[PQR_X] = mti_union.data;
+    /* New Code Begin */
+    //mti3.pqr[PQR_X] = mti_union.data;
+    /* multiple "180/PI" for converting Radian to Degree(mti에서는 라디안 단위로 자이로 값 제공하므로 도 단위로 변환) */
+    mti3.pqr[PQR_X] = mti_union.data * 180/PI;
+    /* New Code Begin */
     
     mti_union.byte[0] = mti_packet[29];
     mti_union.byte[1] = mti_packet[28];
     mti_union.byte[2] = mti_packet[27];
     mti_union.byte[3] = mti_packet[26];
-    mti3.pqr[PQR_Y] = mti_union.data;
+    /* New Code Begin */
+    //mti3.pqr[PQR_Y] = mti_union.data;
+    mti3.pqr[PQR_Y] = mti_union.data * 180/PI;
+    /* New Code Begin */
     
     mti_union.byte[0] = mti_packet[33];
     mti_union.byte[1] = mti_packet[32];
     mti_union.byte[2] = mti_packet[31];
     mti_union.byte[3] = mti_packet[30]; 
-    mti3.pqr[PQR_Z] = mti_union.data;
+    /* New Code Begin */
+    //mti3.pqr[PQR_Z] = mti_union.data;
+    mti3.pqr[PQR_Z] = mti_union.data * 180/PI;
+    /* New Code End */
   }
   else
   {

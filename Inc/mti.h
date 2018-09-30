@@ -8,6 +8,8 @@
 #define MTI_DMA_LEN 1024 
 #define MTI_PACKET_LEN 50
 
+#define PI 3.141592653589
+
 #define ROLL 0
 #define PITCH 1
 #define YAW 2
@@ -36,5 +38,6 @@ int checksum();
 
 extern uint8_t mti_dma_buff[MTI_DMA_LEN];
 extern MTI3 mti3;
+extern uint8_t mti_decode_flag;
 
 #endif

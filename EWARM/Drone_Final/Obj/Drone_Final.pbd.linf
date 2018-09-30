@@ -5,11 +5,6 @@ D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\gpio.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\main.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\mti.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\sbus.pbi
-D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_msp.pbi
-D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_it.pbi
-D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\tim.pbi
-D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\usart.pbi
-D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\system_stm32f4xx.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_cortex.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_dma.pbi
@@ -18,6 +13,7 @@ D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_flash.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_flash_ex.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_flash_ramfunc.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_gpio.pbi
+D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_msp.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_pwr.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_pwr_ex.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_rcc.pbi
@@ -25,3 +21,7 @@ D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_rcc_ex.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_tim.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_tim_ex.pbi
 D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_hal_uart.pbi
+D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\stm32f4xx_it.pbi
+D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\system_stm32f4xx.pbi
+D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\tim.pbi
+D:\Drone_Final\Drone_Final\EWARM\Drone_Final\Obj\usart.pbi
